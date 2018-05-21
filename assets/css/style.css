@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.dropbtn {
+    
+    
+    background: url(../iimg/calendar.svg);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: width 2s;
+    
+}
+.dropdown {
+    position: fixed;
+    right: 10%;
+    bottom: 4%;
+    
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    border: 0px;
+    right: 25%;
+    bottom:25%;
+    
+    
+    padding: 0px;
+    position: absolute;
+    
+    border: 1px solid black;
+    
+    
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background: white;
+    
+    transition: width 2s, height 2s, transform 2s;
+}
+.dropdown-content .dropbtn{
+    opacity: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.show {
+    width: 300px;
+    height: 400px;
+    display: block;
+    transform: rotate(360deg);
+    opacity: 1;
+}
+.show .dropbtn{
+    height: 100px;
+    width: 100%;
+    background-image: none;
+    transition-timing-function: ease-in-out;
+    background-color: #FFAB40;
+    
+    }
+
+.show .dropbtn:hover {
+    height: 100px;
+    width: 100%;
+    background-image: none;
+    transition-timing-function: ease-in-out;
+    
+    }
+
+.dropbtn {
+    background-color: #FFAB40;
+}
+#FF9100
+
+.show .dropdown-content{
+    padding: 30px;
+}
+.btn{
+    margin-top: 10px;
+}
+
+button.btn-warning {
+    color: white;
+    background-color: #FFAB40;
+}
+
+p{
+    font-size: 0px;
+    transition: font-size 2s;
+}
+.show p {
+    display: block;
+    font-size: 20px;
+}

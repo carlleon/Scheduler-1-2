@@ -1,0 +1,54 @@
+body{
+	padding-top:80px;
+}
+span{
+	color:gold;
+}
+.custom_but{
+	margin:10px 0px;
+}
+#signup{
+	display:none;
+}
+#signin{
+	display:none;
+}
+#logo{
+	width:80px;
+	height:80px;
+}
+#text{
+	height:70px;
+	width:200px;
+}
+.btn-avenger{
+	background-color: maroon;
+	border:solid 3px gold;
+	color:white;
+}
+.whole-container{
+	width:960px;
+	padding:30px;
+	height:auto;
+	margin:0px auto;
+	
+}
+.formsign-container{
+	width:600px;
+	border:solid black 3px;
+	border-radius:10px;
+	margin:0px auto;
+	padding:25px;
+	background-color: maroon;
+	color:gold;
+}
+.container{
+	width:480px;
+	border:solid gold 3px;
+	border-radius:10px;
+	margin:0px auto;
+	padding:30px;
+}
+.buttons{
+	margin-top:30px;
+}

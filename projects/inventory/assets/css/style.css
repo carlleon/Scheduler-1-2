@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Lovely_Home';
+    src: url('../fonts/lovely_home.ttf');
+}
+
+@font-face {
+    font-family: 'Caviar_Dreams';
+    src:  url('../fonts/caviar_dreams.ttf');
+}
+
+@font-face {
+    font-family: 'Future_Fixed';
+    src: url('../fonts/future_fixed.ttf');
+}
+
+/* Media-Queries */
+
+@media only screen and (max-device-width : 767px) and (orientation : portrait) {
+    .header-banner{
+        display: none;
+    }
+
+    header .nav-mobile {
+        display: block;
+    }
+
+    header .nav-web {
+        display: none;
+    }
+
+}
+
+@media (min-device-width : 768px) {
+    header .nav-web {
+        display: block;
+    }
+
+    header .nav-mobile {
+        display: none;
+    }
+    
+}
+
+/* Styles */
+
+/* Global Styles*/
+body {
+    width: 100%;
+}
+.logo, .logo-cover {
+    font-family: 'Lovely_Home';
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+}
+
+.logo-cover {
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    color: black;
+}
+
+.logo-cover h1{
+    font-size: 4.5em;
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo a:hover {
+    color: gray;
+    transition: color .3s ease-in-out;
+}
+
+.subTitle{
+    font-family: 'Future_Fixed';
+}
+
+*:focus{
+    outline: none;
+}
+
+
+/* Header */
+.header-cover{
+    background-image: url('http://localhost/projects/inventory/assets/banner/banner.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    filter: blur(2.5px);
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);   
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+}   
+  
+.sticky {
+    position: sticky;
+    width: 100%;
+}
+
+header .mainHeader {
+    overflow: hidden;
+}
+
+header .login {
+    padding: 20px;
+    text-align: right;
+    color: white;
+}
+
+header .login a {
+    color: white;
+    text-decoration: none;
+}
+
+header .login a:hover {
+    color: gray;
+    transition: color .3s ease-in-out;
+}
+
+
+header .search {
+    padding: 20px;
+    text-align: left;
+}
+
+header .search .searchBtn {
+    height: auto;
+    color: white;
+    background-color: transparent;
+    font-size: 1.25em;
+}
+
+header .search .searchBtn:hover {
+    color: gray;
+    transition: color .3s ease-in-out;
+}
+
+header .search .searchInput {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: auto;
+    color: white;
+    background-color: black;
+}
+
+header .search .searchInput:focus{
+    border: 2px solid gray;
+    transition: border .3s ease-in-out;
+}
+
+header nav {
+    border-top: 1.2px solid rgba(255, 255, 255, 0.856);
+}
+
+header nav .breadcrumb {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header .breadcrumb li{
+    display: inline-block;
+    padding: 16px 0;
+    list-style: none;
+}
+
+header .breadcrumb li a {
+    color: white;
+    font-size: 1.12em;
+    text-decoration: none;
+}
+
+header .breadcrumb li a:hover {
+    color: gray;
+    transition: color .3s ease-in-out;
+}
+
+header .nav-mobile .navbar-header button, header nav .navbar-header .navbar-brand {
+    color: white !important;
+}
+
+header .nav-mobile ul li a{
+    color: white;
+}
+
+/* Content */
+section {
+    margin-top: 5em;
+    border-top: 1px solid black;
+    padding: 20px;
+    overflow: hidden;
+}
+
+section h3 {
+    text-align: center;
+    color: black;
+}
+
+section p {
+    font-family: sabon,Georgia,Times,Serif;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+/* Main Content */
+#mainContent #carousel img {
+    height: auto;
+    width: 100%;
+}
+
+#mainContent .ftProductsContainer{
+    padding: 15px;
+    overflow: hidden;
+}
+
+#mainContent .featuredProducts { 
+    padding-left: 0;
+}
+
+#mainContent .featuredProducts li{
+    list-style-type: none;
+}
+
+
+#mainContent .manufacturer-container{
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#mainContent .style-home{
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#mainContent .style-home .style-home-label{
+    text-align: center;
+
+}
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer .logo {
+    font-family: 'Lovely_Home';
+    overflow: hidden;
+}
+
+footer .logo a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .logo a:hover{
+    color: white;
+}
+
+footer .social-media a, footer .social-media i{
+    color: white;
+}
+
+footer .social-media a:hover, footer .social-media i:hover{
+    color: gray;
+    transition: color .3s ease-in-out;
+}
+
+footer .footer-menu ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 12px;
+}
+
+footer .footer-menu ul li a{
+    color: white;
+}
+
+footer .footer-info{
+    color: gray;
+}
+
+footer .footer-legal-policy li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+
+footer .footer-legal-policy li a{
+    color: gray;
+}
