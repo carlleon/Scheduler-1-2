@@ -45,5 +45,23 @@ $(document).ready(function() {
                 }
             }
         }
+
+        function openSchedule(){
+            $('#schedulePage').css('display','block');         
+            $('#roomOne').css('display','none');
+            $('#roomTwo').css('display','none');
+        }
+
+        function roomOneSchedule(){
+            $('#schedulePage').css('display','none');         
+            $('#roomOne').css('display','block');
+            $('#roomTwo').css('display','none');
+        }
+
+        function roomTwoSchedule(){
+            $('#schedulePage').css('display','none');         
+            $('#roomOne').css('display','none');
+            $('#roomTwo').css('display','block');
+        }
        
     

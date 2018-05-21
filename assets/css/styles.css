@@ -31,7 +31,7 @@
     
     
     padding: 0px;
-    position: absolute;
+    position: relative;
     
     border: 1px solid black;
     
@@ -157,4 +157,29 @@
     padding: 15px;
     background-color: #f2f2f2;
     margin: 0px;
+}
+
+/*Room One page*/
+#roomOne{
+    display: none;
+    background-color: transparent;
+    height: 400px;
+}
+#roomTwo {
+    display: none;
+    background-color: transparent;
+    height: 400px;
+}
+
+#openRoomOne {
+    
+    bottom: 1%;
+}
+
+#openRoomTwo {
+    bottom: : 1%;
+}
+
+.roomClose {
+    float: right;
 }
